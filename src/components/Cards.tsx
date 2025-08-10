@@ -3,10 +3,17 @@ import { Card } from "../interfaces/cards/Cards";
 import { getAllCards } from "../services/cardsService";
 import { useCards } from "../context/CardsContext";
 import vOnclickLogo from "../../images/vOnclick-logo.png";
+import mail from "images/pictures/mail.png";
 import facebookIcon from "../../images/logo/social_media/clear/facebook.png";
 import instagramIcon from "../../images/logo/social_media/clear/instagram.png";
 import whatsappIcon from "../../images/logo/social_media/clear/whats-app.png";
 import callIcon from "../../images/logo/social_media/clear/call.png";
+import zimmer from "../../images/location/icons/zimmer.png";
+import villa from "../../images/location/icons/vila.png";
+import suite from "../../images/location/joy/cover.jpeg";
+import loft from "../../images/location/icons/loft.png";
+import hour from "../../images/location/icons/spa.png";
+
 import Ad from "./Ad";
 
 interface CardsProps {
@@ -240,29 +247,23 @@ const Cards: FunctionComponent<CardsProps> = ({
             <h2 id="title-category">חופשות לפי קטגוריה</h2>
             <div className="servis">
               <a href="#zimmer">
-                <img
-                  src="../../images/location/icons/zimmer.png"
-                  alt="צימרים"
-                />
+                <img src={zimmer} alt="צימרים" />
                 <h3>צימרים</h3>
               </a>
               <a href="#villa">
-                <img src="../../images/location/icons/vila.png" alt="וילות" />
+                <img src={villa} alt="וילות" />
                 <h3>וילות</h3>
               </a>
               <a href="#suite">
-                <img src="../../images/location/joy/cover.jpeg" alt="סוויטות" />
+                <img src={suite} alt="סוויטות" />
                 <h3>סוויטות</h3>
               </a>
               <a href="#loft">
-                <img src="../../images/location/icons/loft.png" alt="לופטים" />
+                <img src={loft} alt="לופטים" />
                 <h3>לופטים</h3>
               </a>
               <a href="#hour">
-                <img
-                  src="../../images/location/icons/spa.png"
-                  alt="חדרים לפי שעה"
-                />
+                <img src={hour} alt="חדרים לפי שעה" />
                 <h3>חדרים לפי שעה</h3>
               </a>
             </div>
@@ -301,7 +302,7 @@ const Cards: FunctionComponent<CardsProps> = ({
             </div>
           </div>
           <div className="container-form-contact-us">
-            <img src="images/pictures/mail.png" alt="mail" id="form" />
+            <img src={mail} alt="mail" id="form" />
             <div className="formbox">
               <iframe
                 src="https://app.icount.co.il/api/api_web2lead.php?token=66863e268419c"
