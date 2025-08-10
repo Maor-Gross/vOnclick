@@ -1,0 +1,57 @@
+.container-answer {
+  width: 50%;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2em;
+  padding: 100px;
+}
+
+.accordion-body {
+  text-align: center;
+}
+
+.accordion-button,
+.accordion-body {
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: unset !important;
+}
+
+.accordion-button::after {
+  margin: 0 auto !important;
+  margin-left: unset !important;
+}
+
+#accordionFlushExample {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.accordion-header > button {
+  width: 30em !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .accordion-body {
+    text-align: center;
+  }
+
+  .accordion-header > button {
+    width: 13em !important;
+    height: 4em !important;
+    text-align: center !important;
+  }
+
+  .container-answer {
+    width: 90%;
+  }
+}

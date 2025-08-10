@@ -1,0 +1,221 @@
+.gallery-background {
+  // background-color: #f8f9fa;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-box {
+  width: 100%;
+  height: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  color: #2d2c2f;
+}
+
+h1,
+h2 {
+  color: #037b95;
+  font-weight: bold !important;
+  font-size: 2em !important;
+}
+
+.search-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 25px;
+}
+
+.gallery-container.showPage {
+  margin: 50px auto !important;
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 100px auto;
+}
+
+.gallery-container > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row-reverse;
+  // background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.item-button {
+  font-size: 1.5em !important;
+  font-family: unset !important;
+  width: 10.5em !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-number .item-button {
+  height: 2em !important;
+  color: white !important;
+  background-color: #037b95 !important;
+  border-radius: 5em !important;
+  border: 0;
+}
+
+.container-info {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h3 {
+  color: #037b95 !important;
+  font-weight: bold !important;
+  font-size: 2em !important;
+  direction: rtl;
+}
+
+.gallery-item > .info {
+  width: 100%;
+  text-align: right;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  direction: rtl;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.moreInfo > img {
+  width: 50px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.5em;
+}
+
+.info-item .price {
+  color: #037b95 !important;
+  font-weight: bold !important;
+  font-size: 2em !important;
+  text-align: center;
+}
+
+.bt-more-info {
+  background-color: white !important;
+  color: #037b95 !important;
+  border: 2px solid #037b95;
+  margin: 0 auto;
+  height: 2em !important;
+  border-radius: 5em !important;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.gallery-item > img {
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  padding: 25px;
+  border-radius: 50px;
+}
+
+.gallery-item > p {
+  font-family: "Heebo-Regular";
+  font-size: 1em;
+}
+
+.logo-small > img {
+  width: 1.5em;
+  right: 1.5em;
+}
+
+a {
+  text-decoration: unset !important;
+  color: unset;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-item {
+    height: 100%;
+    flex-direction: column;
+  }
+  .gallery-item > img {
+    width: 100%;
+    height: 50%;
+  }
+  .gallery-background {
+    height: 100%;
+  }
+  .gallery-box.box-page {
+    margin: 0em auto;
+  }
+  .gallery-box {
+    width: 90%;
+    height: 97.5%;
+    margin: 7em auto;
+  }
+  .gallery-box > p {
+    width: 90%;
+  }
+  .gallery-container {
+    height: 100%;
+    grid-template-columns: repeat(9, 90vw);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .container-search {
+    flex-direction: column;
+  }
+  .search-list {
+    width: 90% !important;
+  }
+}

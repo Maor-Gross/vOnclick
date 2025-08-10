@@ -1,0 +1,43 @@
+.reviwes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+  margin: 100px auto;
+}
+
+.caruselReviwes {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(8, 416px);
+  grid-template-rows: repeat(1, 1fr);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 3em;
+}
+
+iframe {
+  width: 416px;
+}
+
+.reviwes > h1 {
+  font-family: "Heebo-Black";
+  font-size: 2em;
+  direction: rtl;
+}
+
+@media screen and (max-width: 1200px) {
+  .caruselReviwes {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(8, 90vw);
+    overflow: scroll;
+    gap: 3em;
+    place-content: unset;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}

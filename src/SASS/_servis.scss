@@ -1,0 +1,72 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.servis {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.servis > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: unset;
+}
+
+.servis > a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.servis > a > img {
+  width: 8.75em;
+  height: 8.75em;
+  border-radius: 100%;
+  display: flex;
+}
+
+.servis > a > h2 {
+  width: 50%;
+  font-family: "Heebo-Regular";
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.servis > a > p {
+  font-family: "Heebo-Regular";
+  direction: rtl;
+}
+
+#servis {
+  font-weight: bold;
+  font-size: 2em;
+  color: #044858;
+  text-align: center;
+}
+
+.servis_text {
+  width: 90%;
+  direction: rtl;
+  text-align: center;
+  font-family: "Heebo-Regular";
+  font-size: 1.25em;
+}
+
+p.servis_text {
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  p.servis_text {
+    width: 90%;
+  }
+}
