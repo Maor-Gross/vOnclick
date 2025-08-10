@@ -240,24 +240,27 @@ const Cards: FunctionComponent<CardsProps> = ({
             <h2 id="title-category">חופשות לפי קטגוריה</h2>
             <div className="servis">
               <a href="#zimmer">
-                <img src="./images/location/icons/zimmer.png" alt="צימרים" />
+                <img
+                  src="../../images/location/icons/zimmer.png"
+                  alt="צימרים"
+                />
                 <h3>צימרים</h3>
               </a>
               <a href="#villa">
-                <img src="./images/location/icons/vila.png" alt="וילות" />
+                <img src="../../images/location/icons/vila.png" alt="וילות" />
                 <h3>וילות</h3>
               </a>
               <a href="#suite">
-                <img src="./images/location/joy/cover.jpeg" alt="סוויטות" />
+                <img src="../../images/location/joy/cover.jpeg" alt="סוויטות" />
                 <h3>סוויטות</h3>
               </a>
               <a href="#loft">
-                <img src="./images/location/icons/loft.png" alt="לופטים" />
+                <img src="../../images/location/icons/loft.png" alt="לופטים" />
                 <h3>לופטים</h3>
               </a>
               <a href="#hour">
                 <img
-                  src="./images/location/icons/spa.png"
+                  src="../../images/location/icons/spa.png"
                   alt="חדרים לפי שעה"
                 />
                 <h3>חדרים לפי שעה</h3>

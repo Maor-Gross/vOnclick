@@ -11,6 +11,9 @@ html {
 body[data-bs-theme="dark"] header {
   background-image: url("../../images/background/background-dark.gif");
 }
+body[data-bs-theme="light"] header {
+  background-image: url("../../images/background/background.gif");
+}
 
 body[data-bs-theme="dark"] h1 {
   color: white;
@@ -43,7 +46,7 @@ header {
   align-items: center;
   gap: 1em;
   opacity: 1;
-  background: url(../images/background/background.gif);
+  // background: url(../images/background/background.gif);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
