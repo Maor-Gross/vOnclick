@@ -101,7 +101,7 @@ const Cards: FunctionComponent<CardsProps> = ({
       <div>
         <center className="spinner">
           <div className="spinner-border text-primary" role="status"></div>
-          <h2>Loading...</h2>
+          <h2 dir="rtl">טוען...</h2>
         </center>
       </div>
     );

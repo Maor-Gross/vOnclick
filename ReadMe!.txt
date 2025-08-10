@@ -1,53 +1,78 @@
-Bcard Application
-Description
-This project is a web application that enables business users to create, manage, and publish digital business cards. The application includes a Content Management System (CMS) that allows users to read, add, edit, and delete cards, with data stored on the server side. The site also features a public card display page and a login system with access to the admin interface.
 
-Technological Requirements
-Design & Responsiveness: CSS
+# חופשה בקליק
 
-Icon Libraries: Bootstrap Icons, React Icons, Font Awesome
-Navigation Menu: Dynamic, with search functionality and light/dark theme toggle
-Pages: Login, Business Details, Navigation Menu, Dynamic Footer, About
-Forms: User-friendly forms with validation and feedback
-Registration & Login: Secure authentication using regex for passwords
-User Authentication: Uses JWT (JSON Web Token) after a successful login
-Card Management: View, create, edit, and delete business cards
-Favorites: Ability to save favorite business cards
-Server Communication: HTTP requests via AXIOS with error handling
+תיאור הפרויקט
 
-Installation & Setup
-Download the Project:
+פרויקט זה הוא אפליקציית רשת המאפשרת למשתמשים ליצור, לנהל ולפרסם מודעות של בתי אירוח בישראל. האתר כולל מערכת ניהול תוכן (CMS) מקיפה, המאפשרת למשתמשים מורשים להוסיף, לקרוא, לערוך ולמחוק מודעות. הנתונים נשמרים בצד השרת, והאתר מציג דף ציבורי עם כל המודעות, לצד ממשק ניהול נגיש למשתמשים רשומים.
 
-https://github.com/Maor-Gross/Bcard-App
-cd Bcard-App
-npm i
+### דרישות טכנולוגיות
 
-Install Dependencies:
-Open a new terminal window and run the following:
-npm install axios bootstrap bootstrap-icons formik jwt-decode react react-dom react-router-dom react-toastify yup
+*עיצוב והתאמה למכשירים ניידים: CSS
+*ספריות אייקונים: Bootstrap Icons, React Icons, Font Awesome
+*תפריט ניווט: דינמי, עם פונקציונליות חיפוש ואפשרות החלפת ערכת נושא (בהיר/כהה).
+*עמודים: התחברות, פרטי משתמש, תפריט ניווט, פוטר דינמי, אודות.
+*טפסים: טפסים ידידותיים למשתמש עם ולידציה ומשוב.
+*רישום והתחברות: אימות משתמשים מאובטח באמצעות regex לסיסמאות.
+*אימות משתמשים: שימוש ב-JWT (JSON Web Token) לאחר התחברות מוצלחת.
+*ניהול מודעות: צפייה, יצירה, עריכה ומחיקה של מודעות.
+*מועדפים: יכולת שמירת בתי אירוח מועדפים לגישה מהירה.
+*תקשורת שרת-לקוח: בקשות HTTP דרך AXIOS עם טיפול בשגיאות.
 
-Run the Project:
+### התקנה והרצה
+
+#### הורדת הפרויקט:
+
+```bash
+git clone - צד לקוח
+https://github.com/Maor-Gross/vOnclick
+
+git clone - צד שרת
+https://github.com/Maor-Gross/adServer
+
+```
+
+#### התקנת התלויות:
+
+פתחו חלון טרמינל חדש והריצו את הפקודה הבאה:
+
+```bash
+npm install
+```
+
+#### הרצת הפרויקט:
+
+```bash
+בצד לקוח
 npm run dev
-Access the Application:
-Open the browser and navigate to:
+
+בצד שרת
+nodemon app
+```
+
+#### גישה לאפליקציה:
+
+פתחו את הדפדפן ונווטו לכתובת:
+
+```
 http://localhost:5173
+```
 
-Usage
-Home Page: Displays all business cards created by users.
-Registration & Login: Business users must sign up and log in to create and manage cards.
-Navigation Menu & Footer: Dynamic based on user permissions.
-Card Interactions:
-Phone Icon: Contact businesses directly.
-Favorites: Save business cards for easy access.
-Edit & Delete: Available to admins and business users who created the card.
-Security Features:
-User data is encrypted.
-Automatic logout upon closing the browser.
+### שימוש
 
-Copyrights
-The interface was designed and developed by Maor Gross, a digital marketing expert.
+*דף הבית: מציג את כל מודעות בתי האירוח שנוצרו על ידי המשתמשים.
+*רישום והתחברות: על בעלי עסקים להירשם ולהתחבר כדי ליצור ולנהל מודעות.
+*תפריט ניווט ופוטר: דינמיים ומשתנים בהתאם להרשאות המשתמש.
+*אינטראקציות עם מודעות:**
+*אייקון טלפון: יצירת קשר ישיר עם בעל העסק.
+*מועדפים: שמירת מודעות מועדפות לגישה מהירה.
+*עריכה ומחיקה: אפשריות למנהלי האתר ולמשתמש שיצר את המודעה.
+*תכונות אבטחה:
+*נתוני המשתמש מוצפנים.
+*יציאה אוטומטית מחשבון עם סגירת הדפדפן.
 
-For inquiries and to view my business card:
-https://maor-gross.co.il/business-card
+### זכויות יוצרים
 
-I hope you enjoy the browsing experience! I’m always open to feedback and suggestions. 😊
+הממשק עוצב ופותח על ידי מאור גרוס, מומחה לשיווק דיגיטלי.
+לפניות ושיתופי פעולה, אתם מוזמנים ליצור קשר.
+אני מקווה שתיהנו מחוויית הגלישה! 
+אשמח לקבל פידבקים והצעות לשיפור.😊
