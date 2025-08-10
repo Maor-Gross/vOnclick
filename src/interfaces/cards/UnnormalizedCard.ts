@@ -2,6 +2,9 @@ export interface UnnormalizedCard {
   title: string;
   subtitle: string;
   description: string;
+  price: number;
+  rooms: number;
+  category: string;
   phone: string;
   email: string;
   web: string;
