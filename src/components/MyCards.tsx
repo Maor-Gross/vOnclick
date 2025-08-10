@@ -12,14 +12,11 @@ interface MyCardsProps {
 }
 
 const MyCards: FunctionComponent<MyCardsProps> = ({ searchTerm }) => {
-  console.log("MyCards component rendered");
-
   const { user } = useUser();
   const [myCards, setMyCards] = useState<Card[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const updateCards = useCallback(() => {
-    console.log("updateCards called in MyCards component");
     if (user && user._id) {
       const userId = user._id;
       getAllCards()
@@ -45,7 +42,6 @@ const MyCards: FunctionComponent<MyCardsProps> = ({ searchTerm }) => {
   }, [user]);
 
   useEffect(() => {
-    console.log("MyCards useEffect triggered");
     updateCards();
   }, [updateCards]);
 

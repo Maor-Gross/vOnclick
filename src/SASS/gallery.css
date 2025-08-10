@@ -25,6 +25,10 @@ h2 {
   font-size: 2em !important;
 }
 
+.container-cards {
+  width: 100%;
+}
+
 .search-list {
   width: 100%;
   display: flex;

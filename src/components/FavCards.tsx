@@ -12,14 +12,11 @@ interface FavCardsProps {
 }
 
 const FavCards: FunctionComponent<FavCardsProps> = ({ searchTerm }) => {
-  console.log("FavCards component rendered");
-
   const { user } = useUser();
   const [favCards, setFavCards] = useState<Card[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const updateCards = useCallback(() => {
-    console.log("updateCards called in FavCards component");
     if (user && user._id) {
       const userId = user._id;
 
@@ -42,7 +39,6 @@ const FavCards: FunctionComponent<FavCardsProps> = ({ searchTerm }) => {
   }, [user]);
 
   useEffect(() => {
-    console.log("FavCards useEffect triggered");
     updateCards();
   }, [updateCards]);
 
