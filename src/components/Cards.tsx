@@ -3,7 +3,7 @@ import { Card } from "../interfaces/cards/Cards";
 import { getAllCards } from "../services/cardsService";
 import { useCards } from "../context/CardsContext";
 import vOnclickLogo from "../../images/vOnclick-logo.png";
-import mail from "images/pictures/mail.png";
+import mail from "../../images/pictures/mail.png";
 import facebookIcon from "../../images/logo/social_media/clear/facebook.png";
 import instagramIcon from "../../images/logo/social_media/clear/instagram.png";
 import whatsappIcon from "../../images/logo/social_media/clear/whats-app.png";
