@@ -1,4 +1,5 @@
 import { FunctionComponent, useEffect, useState, useCallback } from "react";
+// נניח ש-Card ו-Ad קיימים בקבצים המתאימים
 import { Card } from "../interfaces/cards/Cards";
 import { getAllCards } from "../services/cardsService";
 import { useCards } from "../context/CardsContext";
@@ -101,7 +102,13 @@ const Cards: FunctionComponent<CardsProps> = ({
       <div>
         <center className="spinner">
           <div className="spinner-border text-primary" role="status"></div>
-          <h2 dir="rtl">טוען...</h2>
+          <h2 dir="rtl">
+            הידד! ברוכים הבאים👋 <br />
+            אנחנו מארגנים את המודעות הכי שוות🏝 <br />
+            כדי שתהיה לך חופשה חלומית🤩
+            <br />
+            תודה על הסבלנות🙏 <br />
+          </h2>
         </center>
       </div>
     );
@@ -219,14 +226,16 @@ const Cards: FunctionComponent<CardsProps> = ({
               />
             </div>
           </div>
-          <button
-            className="btn btn-outline-success"
-            type="submit"
-            style={{ fontFamily: "unset" }}
-            id="submit-search"
-            onClick={handleSearch}>
-            מצא חופשה בקליק
-          </button>
+          <a href="#ads">
+            <button
+              className="btn btn-outline-success"
+              type="submit"
+              style={{ fontFamily: "unset" }}
+              id="submit-search"
+              onClick={handleSearch}>
+              מצא חופשה בקליק
+            </button>
+          </a>
         </div>
 
         <div>
@@ -256,26 +265,10 @@ const Cards: FunctionComponent<CardsProps> = ({
             </div>
           </div>
 
-          <div className="gallery-background" id="projects">
+          <div className="gallery-background" id="ads">
             <div className="gallery-box">
               <div className="gallery-container">
-                {searchInitiated || searchTerm ? (
-                  <div className="row justify-content-center gap-4 mb-5 py-3 container-cards">
-                    {cardsToDisplay.length > 0 ? (
-                      cardsToDisplay.map((card, index) => (
-                        <Ad
-                          key={card._id || index}
-                          card={card}
-                          updateCards={updateCards}
-                        />
-                      ))
-                    ) : (
-                      <h1 className="text-center display-1">
-                        לא נמצאו תוצאות העונות לשדה החיפוש שלך
-                      </h1>
-                    )}
-                  </div>
-                ) : cardsToDisplay.length > 0 ? (
+                {cardsToDisplay.length > 0 ? (
                   categories.map((category) => {
                     const categoryCards = cardsToDisplay.filter(
                       (card) => card.category === category
@@ -287,11 +280,9 @@ const Cards: FunctionComponent<CardsProps> = ({
                           <h2 id="contacts-site">{categoryNames[category]}</h2>
                           <div className="row justify-content-center gap-4 mb-5 py-3 container-cards">
                             {categoryCards.map((card, index) => (
-                              <Ad
-                                key={card._id || index}
-                                card={card}
-                                updateCards={updateCards}
-                              />
+                              <div key={card._id || index}>
+                                <Ad card={card} updateCards={updateCards} />
+                              </div>
                             ))}
                           </div>
                         </div>
@@ -301,8 +292,9 @@ const Cards: FunctionComponent<CardsProps> = ({
                 ) : (
                   <div className="text-center">
                     <h1 className="text-center display-1">
-                      טרם נוספו בתי אירוח לאתר יש להירשם כמשתמש עסקי לבצע
-                      התחברות ולאחר מכן ליצור מודעה חדשה
+                      {searchInitiated || searchTerm
+                        ? "לא נמצאו תוצאות העונות לשדה החיפוש שלך"
+                        : "טרם נוספו בתי אירוח לאתר יש להירשם כמשתמש עסקי לבצע התחברות ולאחר מכן ליצור מודעה חדשה"}
                     </h1>
                   </div>
                 )}
