@@ -81,7 +81,9 @@ const MyCards: FunctionComponent<MyCardsProps> = ({ searchTerm }) => {
               ))}
             </>
           ) : (
-            <p>צרו מודעה חדשה משלכם במהירות ובקלות בלחיצה על הכפתור למעלה☝</p>
+            <h1 style={{ direction: "rtl" }}>
+              צרו מודעה חדשה משלכם במהירות ובקלות בלחיצה על הכפתור למעלה☝
+            </h1>
           )}
         </div>
       </div>
