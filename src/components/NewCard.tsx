@@ -173,7 +173,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="url">URL</label>
+            <label htmlFor="url">Image URL</label>
             {formik.touched.url && formik.errors.url && (
               <p className="text-danger">{formik.errors.url}</p>
             )}
@@ -243,6 +243,7 @@ const NewCard: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.category}
                   required>
+                  <option value="select">select category...</option>
                   <option value="hour">hour</option>
                   <option value="loft">loft</option>
                   <option value="suite">suite</option>

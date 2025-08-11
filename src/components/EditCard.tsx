@@ -281,6 +281,7 @@ const EditCard: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.category}
                   required>
+                  <option value="select">select category</option>
                   <option value="hour">hour</option>
                   <option value="loft">loft</option>
                   <option value="suite">suite</option>
