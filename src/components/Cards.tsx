@@ -227,19 +227,6 @@ const Cards: FunctionComponent<CardsProps> = ({
             onClick={handleSearch}>
             מצא חופשה בקליק
           </button>
-          <div className="search-list">
-            {searchInitiated && searchResults.length > 0 ? (
-              searchResults.map((card, index) => (
-                <div key={card._id || index}>
-                  <Ad card={card} updateCards={updateCards} />
-                </div>
-              ))
-            ) : searchInitiated && searchResults.length === 0 ? (
-              <h1 className="text-center display-1">לא נמצאו תוצאות</h1>
-            ) : (
-              <></>
-            )}
-          </div>
         </div>
 
         <div>
@@ -272,11 +259,23 @@ const Cards: FunctionComponent<CardsProps> = ({
           <div className="gallery-background" id="projects">
             <div className="gallery-box">
               <div className="gallery-container">
-                {cardsToDisplay.length === 0 ? (
-                  <div className="text-center">
-                    <h1 className="text-center display-1">לא נמצאו תוצאות</h1>
+                {searchInitiated || searchTerm ? (
+                  <div className="row justify-content-center gap-4 mb-5 py-3 container-cards">
+                    {cardsToDisplay.length > 0 ? (
+                      cardsToDisplay.map((card, index) => (
+                        <Ad
+                          key={card._id || index}
+                          card={card}
+                          updateCards={updateCards}
+                        />
+                      ))
+                    ) : (
+                      <h1 className="text-center display-1">
+                        לא נמצאו תוצאות העונות לשדה החיפוש שלך
+                      </h1>
+                    )}
                   </div>
-                ) : (
+                ) : cardsToDisplay.length > 0 ? (
                   categories.map((category) => {
                     const categoryCards = cardsToDisplay.filter(
                       (card) => card.category === category
@@ -288,15 +287,24 @@ const Cards: FunctionComponent<CardsProps> = ({
                           <h2 id="contacts-site">{categoryNames[category]}</h2>
                           <div className="row justify-content-center gap-4 mb-5 py-3 container-cards">
                             {categoryCards.map((card, index) => (
-                              <div key={card._id || index}>
-                                <Ad card={card} updateCards={updateCards} />
-                              </div>
+                              <Ad
+                                key={card._id || index}
+                                card={card}
+                                updateCards={updateCards}
+                              />
                             ))}
                           </div>
                         </div>
                       )
                     );
                   })
+                ) : (
+                  <div className="text-center">
+                    <h1 className="text-center display-1">
+                      טרם נוספו בתי אירוח לאתר יש להירשם כמשתמש עסקי לבצע
+                      התחברות ולאחר מכן ליצור מודעה חדשה
+                    </h1>
+                  </div>
                 )}
               </div>
             </div>
@@ -401,7 +409,6 @@ const Cards: FunctionComponent<CardsProps> = ({
                   data-bs-parent="#accordionFlushExample">
                   <div className="accordion-body">
                     תוכלו להתעדכן בכל המבצעים בעמוד מבצעים חמים בחופשה בקליק
-                    לחופשה חלומית במחיר המשתלם ביותר.
                   </div>
                 </div>
               </div>

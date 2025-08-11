@@ -3,7 +3,6 @@ import { FunctionComponent, useEffect, useState, useCallback } from "react";
 import { Card } from "../interfaces/cards/Cards";
 import { getAllCards } from "../services/cardsService";
 import { useUser } from "../context/UserContext";
-// import Bcard from "./Bcard";
 import { errorMessage } from "../services/feedbackService";
 import Ad from "./Ad";
 
@@ -55,7 +54,7 @@ const MyCards: FunctionComponent<MyCardsProps> = ({ searchTerm }) => {
       <div>
         <center className="spinner">
           <div className="spinner-border text-primary" role="status"></div>
-          <h2>Loading...</h2>
+          <h2 style={{ direction: "rtl" }}>טוען...</h2>
         </center>
       </div>
     );

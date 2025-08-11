@@ -3,7 +3,6 @@ import { FunctionComponent, useCallback, useEffect, useState } from "react";
 import { Card } from "../interfaces/cards/Cards";
 import { getAllCards } from "../services/cardsService";
 import { useUser } from "../context/UserContext";
-// import Bcard from "./Bcard";
 import { errorMessage } from "../services/feedbackService";
 import Ad from "./Ad";
 
