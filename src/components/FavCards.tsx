@@ -67,7 +67,9 @@ const FavCards: FunctionComponent<FavCardsProps> = ({ searchTerm }) => {
           </>
         ))
       ) : (
-        <h1 className="display-1 mb-4">עדיין אין לך מודעות שאהבת</h1>
+        <h1 className="display-1 mb-4">
+          סמנו ב-💙 מודעות שאהבתם והם יופיעו ממש כאן
+        </h1>
       )}
     </div>
   );

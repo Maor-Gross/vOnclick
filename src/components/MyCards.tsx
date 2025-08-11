@@ -81,7 +81,7 @@ const MyCards: FunctionComponent<MyCardsProps> = ({ searchTerm }) => {
               ))}
             </>
           ) : (
-            <p>עדיין אין לך מודעות שיצרת</p>
+            <p>צרו מודעה חדשה משלכם במהירות ובקלות בלחיצה על הכפתור למעלה☝</p>
           )}
         </div>
       </div>

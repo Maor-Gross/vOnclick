@@ -1,5 +1,4 @@
 import { FunctionComponent, useEffect, useState, useCallback } from "react";
-// נניח ש-Card ו-Ad קיימים בקבצים המתאימים
 import { Card } from "../interfaces/cards/Cards";
 import { getAllCards } from "../services/cardsService";
 import { useCards } from "../context/CardsContext";
@@ -56,13 +55,13 @@ const Cards: FunctionComponent<CardsProps> = ({
         if (res && res.data) {
           setCards(res.data);
         } else {
-          setError("Failed to load cards. Please try again.");
+          setError("Failed to load ads. Please try again.");
         }
         setIsLoading(false);
       })
       .catch((err) => {
         console.error("Error loading cards:", err);
-        setError("Failed to load cards. Please try again.");
+        setError("Failed to load ads. Please try again.");
         setIsLoading(false);
       });
   }, [setCards]);
@@ -113,7 +112,7 @@ const Cards: FunctionComponent<CardsProps> = ({
       </div>
     );
   } else if (error) {
-    return <div>{error}</div>;
+    return <h1>{error}</h1>;
   } else {
     const uniqueCities =
       cards.length > 0
