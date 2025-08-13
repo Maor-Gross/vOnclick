@@ -60,12 +60,12 @@ const FavCards: FunctionComponent<FavCardsProps> = ({ searchTerm }) => {
   return (
     <div className="row justify-content-center gap-4 mb-5 py-3 container-cards text-center">
       {filteredFavCards.length > 0 ? (
-        filteredFavCards.map((card: Card) => (
-          <>
-            <h1 className="display-1">מודעות שאהבתי</h1>
+        <>
+          <h1 className="display-1">מודעות שאהבתי</h1>
+          {filteredFavCards.map((card: Card) => (
             <Ad key={String(card._id)} card={card} updateCards={updateCards} />
-          </>
-        ))
+          ))}
+        </>
       ) : (
         <h1 className="display-1 mb-4">
           סמנו ב-💙 מודעות שאהבתם והם יופיעו ממש כאן
