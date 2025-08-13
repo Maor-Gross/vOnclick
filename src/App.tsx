@@ -59,7 +59,7 @@ function App() {
                 <Route path="/new-card" element={<NewCard />} />
                 <Route path="/edit-card" element={<EditCard />} />
                 <Route path="/about" element={<About />} />
-                <Route path="//sand-box" element={<SandBox />} />
+                <Route path="/sand-box" element={<SandBox />} />
                 <Route path="/card-info/:cardId" element={<CardInfo />} />
               </Routes>
             </div>
