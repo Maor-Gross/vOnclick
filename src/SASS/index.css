@@ -961,7 +961,8 @@ a {
   align-items: center;
   margin: 0 auto;
   gap: 2em;
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .accordion-body {
