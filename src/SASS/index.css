@@ -30,10 +30,9 @@ h1 {
 .container-big {
   width: 100%;
   height: 100%;
-  margin-top: 5em;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 
 header {
@@ -378,7 +377,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 
 .servis {
@@ -639,7 +638,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   margin: 100px auto;
 }
 
@@ -649,7 +647,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
 }
 
 .gallery-item {
