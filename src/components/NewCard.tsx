@@ -71,7 +71,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="title">Title</label>
+            <label htmlFor="title">כותרת</label>
             {formik.touched.title && formik.errors.title && (
               <p className="text-danger">{formik.errors.title}</p>
             )}
@@ -88,7 +88,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="subTitle">Subtitle</label>
+            <label htmlFor="subTitle">כותרת משנה</label>
             {formik.touched.subTitle && formik.errors.subTitle && (
               <p className="text-danger">{formik.errors.subTitle}</p>
             )}
@@ -105,7 +105,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">תיאור</label>
             {formik.touched.description && formik.errors.description && (
               <p className="text-danger">{formik.errors.description}</p>
             )}
@@ -122,7 +122,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone">טלפון נייד</label>
             {formik.touched.phone && formik.errors.phone && (
               <p className="text-danger">{formik.errors.phone}</p>
             )}
@@ -139,7 +139,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">אימייל</label>
             {formik.touched.email && formik.errors.email && (
               <p className="text-danger">{formik.errors.email}</p>
             )}
@@ -156,7 +156,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="web">Web</label>
+            <label htmlFor="web">כתובת אתר</label>
             {formik.touched.web && formik.errors.web && (
               <p className="text-danger">{formik.errors.web}</p>
             )}
@@ -173,7 +173,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="url">Image URL</label>
+            <label htmlFor="url">קישור לתמונה</label>
             {formik.touched.url && formik.errors.url && (
               <p className="text-danger">{formik.errors.url}</p>
             )}
@@ -190,7 +190,7 @@ const NewCard: FunctionComponent<object> = () => {
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
-            <label htmlFor="alt">Alt</label>
+            <label htmlFor="alt">טקסט לתמונה</label>
             {formik.touched.alt && formik.errors.alt && (
               <p className="text-danger">{formik.errors.alt}</p>
             )}
@@ -208,7 +208,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.price}
                   name="price"
                 />
-                <label htmlFor="price">price</label>
+                <label htmlFor="price">מחיר</label>
                 {formik.touched.price && formik.errors.price && (
                   <p className="text-danger">{formik.errors.price}</p>
                 )}
@@ -227,7 +227,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.rooms}
                   required
                 />
-                <label htmlFor="rooms">rooms</label>
+                <label htmlFor="rooms">חדרים</label>
                 {formik.touched.rooms && formik.errors.rooms && (
                   <p className="text-danger">{formik.errors.rooms}</p>
                 )}
@@ -243,14 +243,14 @@ const NewCard: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.category}
                   required>
-                  <option value="select">select category...</option>
-                  <option value="hour">hour</option>
-                  <option value="loft">loft</option>
-                  <option value="suite">suite</option>
-                  <option value="villa">villa</option>
-                  <option value="zimmer">zimmer</option>
+                  <option value="select">בחר קטגוריה</option>
+                  <option value="hour">שעתי</option>
+                  <option value="loft">לופט</option>
+                  <option value="suite">סוויטה</option>
+                  <option value="villa">וילה</option>
+                  <option value="zimmer">צימר</option>
                 </select>
-                <label htmlFor="category">Category</label>
+                <label htmlFor="category">קטגוריה</label>
                 {formik.touched.category && formik.errors.category && (
                   <p className="text-danger">{formik.errors.category}</p>
                 )}
@@ -270,7 +270,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.state}
                   name="state"
                 />
-                <label htmlFor="state">State</label>
+                <label htmlFor="state">אזור</label>
                 {formik.touched.state && formik.errors.state && (
                   <p className="text-danger">{formik.errors.state}</p>
                 )}
@@ -289,7 +289,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.country}
                   required
                 />
-                <label htmlFor="country">Country</label>
+                <label htmlFor="country">מדינה</label>
                 {formik.touched.country && formik.errors.country && (
                   <p className="text-danger">{formik.errors.country}</p>
                 )}
@@ -308,7 +308,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.city}
                   required
                 />
-                <label htmlFor="city">City</label>
+                <label htmlFor="city">עיר</label>
                 {formik.touched.city && formik.errors.city && (
                   <p className="text-danger">{formik.errors.city}</p>
                 )}
@@ -330,7 +330,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.street}
                   required
                 />
-                <label htmlFor="street">Street</label>
+                <label htmlFor="street">רחוב</label>
                 {formik.touched.street && formik.errors.street && (
                   <p className="text-danger">{formik.errors.street}</p>
                 )}
@@ -349,7 +349,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.houseNumber}
                   required
                 />
-                <label htmlFor="houseNumber">House Number</label>
+                <label htmlFor="houseNumber">מספר בית</label>
                 {formik.touched.houseNumber && formik.errors.houseNumber && (
                   <p className="text-danger">{formik.errors.houseNumber}</p>
                 )}
@@ -368,7 +368,7 @@ const NewCard: FunctionComponent<object> = () => {
                   value={formik.values.zip}
                   required
                 />
-                <label htmlFor="zip">Zip Code</label>
+                <label htmlFor="zip">מיקוד</label>
                 {formik.touched.zip && formik.errors.zip && (
                   <p className="text-danger">{formik.errors.zip}</p>
                 )}
@@ -380,7 +380,7 @@ const NewCard: FunctionComponent<object> = () => {
             disabled={!formik.dirty || !formik.isValid}
             type="submit"
             className="btn btn-dark">
-            Create Business
+            צור מודעה
           </button>
         </form>
       </div>

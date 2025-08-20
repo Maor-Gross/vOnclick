@@ -40,7 +40,39 @@ footer {
 .form,
 .form-control,
 input {
+  direction: rtl;
   z-index: 0 !important;
+}
+
+.form-floating > label {
+  right: 0 !important;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  float: right;
+  margin: unset;
+  margin-left: 0.5rem !important;
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  transform: unset !important;
+}
+
+label {
+  padding: 0px 0.75rem !important;
+}
+
+button {
+  color: white !important;
+  background-color: #037b94 !important;
 }
 
 .vOnclick-logo {

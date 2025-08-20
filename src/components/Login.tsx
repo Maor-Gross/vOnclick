@@ -45,7 +45,7 @@ const Login: FunctionComponent<object> = () => {
 
   return (
     <div className="w-50 mx-auto py-3 container-form">
-      <h1 className="display-1 text-center mb-4">Login</h1>
+      <h1 className="display-1 text-center mb-4">התחברות</h1>
       <form className="form" onSubmit={formik.handleSubmit}>
         <div className="form-floating mb-3">
           <input
@@ -59,7 +59,7 @@ const Login: FunctionComponent<object> = () => {
             value={formik.values.email}
             required
           />
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">אימייל</label>
           {formik.touched.email && formik.errors.email && (
             <p className="text-danger">{formik.errors.email}</p>
           )}
@@ -77,7 +77,7 @@ const Login: FunctionComponent<object> = () => {
             value={formik.values.password}
             required
           />
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">סיסמא</label>
           {formik.touched.password && formik.errors.password && (
             <p className="text-danger">{formik.errors.password}</p>
           )}
@@ -85,8 +85,8 @@ const Login: FunctionComponent<object> = () => {
         <button
           disabled={!formik.dirty || !formik.isValid}
           type="submit"
-          className="btn btn-primary mt-4">
-          Login
+          className="btn mt-4">
+          התחבר
         </button>
       </form>
     </div>

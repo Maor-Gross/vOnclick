@@ -70,7 +70,7 @@ const Register: FunctionComponent<object> = () => {
   return (
     <>
       <div className="container-form w-50 mx-auto mb-5 py-3">
-        <h1 className="display-1 text-center mb-4">Register</h1>
+        <h1 className="display-1 text-center mb-4">הרשמה</h1>
         <form className="form position-relative" onSubmit={formik.handleSubmit}>
           <div className="row g-3">
             <div className="col-md">
@@ -86,7 +86,7 @@ const Register: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.first}
                 />
-                <label htmlFor="firstName">First Name</label>
+                <label htmlFor="firstName">שם פרטי</label>
                 {formik.touched.first && formik.errors.first && (
                   <p className="text-danger">{formik.errors.first}</p>
                 )}
@@ -104,7 +104,7 @@ const Register: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.middle}
                 />
-                <label htmlFor="middleName">Middle Name</label>
+                <label htmlFor="middleName">שם אמצעי</label>
                 {formik.touched.middle && formik.errors.middle && (
                   <p className="text-danger">{formik.errors.middle}</p>
                 )}
@@ -123,7 +123,7 @@ const Register: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.last}
                 />
-                <label htmlFor="lastName">Last Name</label>
+                <label htmlFor="lastName">שם משפחה</label>
                 {formik.touched.last && formik.errors.last && (
                   <p className="text-danger">{formik.errors.last}</p>
                 )}
@@ -145,7 +145,7 @@ const Register: FunctionComponent<object> = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.phone}
                 />
-                <label htmlFor="tel">Phone</label>
+                <label htmlFor="tel">טלפון נייד</label>
                 {formik.touched.phone && formik.errors.phone && (
                   <p className="text-danger">{formik.errors.phone}</p>
                 )}
@@ -165,7 +165,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.email}
                   required
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">אימייל</label>
                 {formik.touched.email && formik.errors.email && (
                   <p className="text-danger">{formik.errors.email}</p>
                 )}
@@ -187,7 +187,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.password}
                   required
                 />
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">סיסמא</label>
                 {formik.touched.password && formik.errors.password && (
                   <p className="text-danger">{formik.errors.password}</p>
                 )}
@@ -207,7 +207,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.confirmPassword}
                   required
                 />
-                <label htmlFor="confirmPassword">Confirm Password</label>
+                <label htmlFor="confirmPassword">אישור סיסמא</label>
                 {formik.touched.confirmPassword &&
                   formik.errors.confirmPassword && (
                     <p className="text-danger">
@@ -231,7 +231,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.image}
                   name="image"
                 />
-                <label htmlFor="image">Profile Image</label>
+                <label htmlFor="image">קישור לתמונה</label>
                 {formik.touched.image && formik.errors.image && (
                   <p className="text-danger">{formik.errors.image}</p>
                 )}
@@ -250,7 +250,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.alt}
                   name="alt"
                 />
-                <label htmlFor="alt">Alternative Text</label>
+                <label htmlFor="alt">טקסט לתמונה</label>
                 {formik.touched.alt && formik.errors.alt && (
                   <p className="text-danger">{formik.errors.alt}</p>
                 )}
@@ -271,7 +271,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.state}
                   name="state"
                 />
-                <label htmlFor="state">State</label>
+                <label htmlFor="state">אזור</label>
                 {formik.touched.state && formik.errors.state && (
                   <p className="text-danger">{formik.errors.state}</p>
                 )}
@@ -290,7 +290,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.country}
                   required
                 />
-                <label htmlFor="country">Country</label>
+                <label htmlFor="country">מדינה</label>
                 {formik.touched.country && formik.errors.country && (
                   <p className="text-danger">{formik.errors.country}</p>
                 )}
@@ -309,7 +309,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.city}
                   required
                 />
-                <label htmlFor="city">City</label>
+                <label htmlFor="city">עיר</label>
                 {formik.touched.city && formik.errors.city && (
                   <p className="text-danger">{formik.errors.city}</p>
                 )}
@@ -331,7 +331,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.street}
                   required
                 />
-                <label htmlFor="street">Street</label>
+                <label htmlFor="street">רחוב</label>
                 {formik.touched.street && formik.errors.street && (
                   <p className="text-danger">{formik.errors.street}</p>
                 )}
@@ -350,7 +350,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.houseNumber}
                   required
                 />
-                <label htmlFor="houseNumber">House Number</label>
+                <label htmlFor="houseNumber">מספר בית</label>
                 {formik.touched.houseNumber && formik.errors.houseNumber && (
                   <p className="text-danger">{formik.errors.houseNumber}</p>
                 )}
@@ -369,7 +369,7 @@ const Register: FunctionComponent<object> = () => {
                   value={formik.values.zip}
                   required
                 />
-                <label htmlFor="zip">Zip Code</label>
+                <label htmlFor="zip">מיקוד</label>
                 {formik.touched.zip && formik.errors.zip && (
                   <p className="text-danger">{formik.errors.zip}</p>
                 )}
@@ -388,7 +388,7 @@ const Register: FunctionComponent<object> = () => {
               value={formik.values.isBusiness}
             />
             <label className="form-check-label" htmlFor="isBusiness">
-              Is Business?
+              משתמש עסקי?
             </label>
             {formik.touched.isBusiness && formik.errors.isBusiness && (
               <p className="text-danger">{formik.errors.isBusiness}</p>
@@ -399,7 +399,7 @@ const Register: FunctionComponent<object> = () => {
             disabled={!formik.dirty || !formik.isValid}
             type="submit"
             className="btn btn-primary mt-4">
-            Register
+            הירשם
           </button>
         </form>
       </div>
