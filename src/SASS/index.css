@@ -790,7 +790,7 @@ a {
   .gallery-box {
     width: 90%;
     height: 97.5%;
-    margin: 7em auto;
+    margin: 25px auto !important;
   }
   .gallery-box > p {
     width: 90%;
