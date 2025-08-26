@@ -99,6 +99,7 @@ header p {
 
 .navbar {
   z-index: 1 !important;
+  background-color: #037b95;
 }
 
 .accordion-button,

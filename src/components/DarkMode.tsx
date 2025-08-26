@@ -13,19 +13,16 @@ const DarkMode: FunctionComponent<object> = () => {
     const footer = document.querySelector("footer");
     const header = document.querySelector("header") as HTMLElement;
     const h1 = document.querySelector("#connect") as HTMLElement;
+    const p = document.querySelectorAll("p");
     const toggler = document.querySelector(".navbar-toggler") as HTMLElement;
-    const navbar = document.querySelector(".navbar") as HTMLElement;
 
     if (body) {
       body.setAttribute("data-bs-theme", darkMode ? "dark" : "light");
     }
     if (footer) {
-      footer.style.backgroundColor = darkMode ? "black" : "white";
+      footer.style.backgroundColor = darkMode ? "#037b95" : "white";
     }
 
-    if (navbar) {
-      navbar.style.backgroundColor = darkMode ? "black" : "#037b95";
-    }
     if (toggler) {
       toggler.style.backgroundColor = darkMode ? "black" : "white";
     }
@@ -36,6 +33,11 @@ const DarkMode: FunctionComponent<object> = () => {
     }
     if (h1) {
       h1.style.color = darkMode ? "white" : "#037b95";
+    }
+    if (p) {
+      p.forEach((p) => {
+        p.style.color = darkMode ? "white" : "black";
+      });
     }
 
     localStorage.setItem("darkMode", String(darkMode));
